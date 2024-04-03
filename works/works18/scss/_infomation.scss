@@ -1,0 +1,32 @@
+.information{
+  margin-bottom: 100px;
+  opacity: 0;
+
+  .information-contents{
+    
+    .dayly{
+      font-size: 1.3rem;
+
+      @media screen and (max-width:880px){
+        font-size: .8rem;
+      }
+    }
+
+    h3{
+      font-size: 2rem;
+      padding: 30px 0;
+
+      @media screen and (max-width:880px){
+        font-size: 1.5rem;
+      }
+    }
+
+    P{
+      padding-bottom: 10px;
+
+      @media screen and (max-width:880px){
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.top{
+  margin-bottom: 100px;
+
+  @media screen and (max-width:880px){
+    margin-bottom: 50px;
+  }
+
+  .main-visual{
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 100px;
+    overflow-x: hidden;
+
+    img{
+      display: block;
+      width: 33%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+
+      @media screen and (max-width:880px){
+        width: 100%;
+      }
+    }
+  }
+
+  .top-wrapper{
+    opacity: 0;
+
+    h1{
+      font-size: 5rem;
+      padding-bottom: 50px;
+
+      @media screen and (max-width:880px){
+        font-size: 2.5rem ;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

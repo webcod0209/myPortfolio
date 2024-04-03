@@ -1,0 +1,380 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    font-size: 0.875rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    width: 100%;
+    max-width: 1032px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.header-left{
+    display: flex;
+}
+
+.header-left img{
+    width: 130px;
+    padding-right: 30px;
+}
+
+.header-left ul{
+    display: flex;
+}
+
+.header-left li{
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.header-right{
+    background-color: black;
+    height: 80px;
+    line-height: 80px;
+    width: 200px;
+    text-align: center;
+}
+
+.header-right:hover{
+    background-color: #333;
+}
+
+.header-right a{
+    color: white;
+    font-size: 12px;
+    display: block;
+}
+
+.main-visual img{
+    width: 100%;
+    object-fit: cover;
+    height: 620px;
+}
+
+.heading{
+    padding-bottom: 50px;
+}
+
+.heading h1{
+    font-size: 37px;
+    letter-spacing: 10px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.heading p{
+    padding-bottom: 35px;
+}
+
+.heading::after{
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: black;
+    display: block;
+}
+
+.news-wrapper{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.daylys{
+    display: flex;
+}
+
+.dayly{
+    padding-right: 97px;
+    border-right: black solid 1px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.first-child{
+    padding-left: 0px;
+}
+
+.last-child{
+    border-right: none;
+}
+
+.date{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.time{
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+.sub{
+    color: white;
+    background-color: black;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.about-wrapper{
+    display: flex;
+}
+
+.about-wrapper img{
+    width: 55%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.about-contents{
+    padding-top: 180px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.text{
+    line-height: 30px;
+    font-size: 13.5px;
+}
+
+.business-wrapper{
+    padding-bottom: 80px;
+}
+
+.photos{
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+.photo p{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.title{
+    position: relative;
+    margin-left: 18px;
+}
+
+.title::before{
+    content: "";
+    width: 8px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: -18px;
+}
+
+.photo img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.left{
+    padding-top: 100px;
+    width: 46%;
+}
+
+.right{
+    width: 46%;
+}
+
+.company-wrapper{
+    height: 750px;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.company-contents{
+    background-color: white;
+    width: 55%;
+    padding: 100px 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+dl{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+
+dt{
+    width: 20%;
+}
+
+dd{
+    width: 80%;
+}
+
+.add{
+    margin: 0 20%;
+}
+
+.company-image{
+    width: 53%;
+    position: absolute;
+    top: 115px;
+    right: 0;
+}
+
+.company-image img{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+
+footer{
+    height: 220px;
+    background-color: white;
+}
+
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left{
+    padding-top: 80px;
+}
+
+footer img{
+    width: 100px;
+    padding-bottom: 80px;
+}
+
+.inc{
+    font-size: 8px;
+}
+
+.footer-right{
+    padding-top: 40px;
+}
+
+.footer-right p{
+    line-height: 21px;
+}
+

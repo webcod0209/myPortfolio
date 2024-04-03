@@ -1,0 +1,248 @@
+$breakpoint: (
+  sp: "screen and (max-width: 767px)",
+  tab: "screen and (min-width: 768px)",
+  pc: "screen and (min-width: 1025px)"
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+$pcDesignSize: 1440;
+$spDesignSize: 640;
+ 
+@function vw( $size: 16 ) {
+  $vw: $size * (100 / $pcDesignSize) + vw;
+  @return $vw;
+}
+@function svw( $size: 16 ) {
+  $svw: $size * (100 / $spDesignSize) + vw;
+  @return $svw;
+}
+
+@mixin container {
+  padding: 150px;
+  margin-left: 200px;
+  position: relative;
+
+  .logo{
+    position: fixed;
+    top: 200px;
+    left: 200px;
+
+    &__title{
+      font-size: 36px;
+      letter-spacing: .8rem;
+      margin-bottom: 10px;
+      transition: .5s;
+      &:hover{
+        opacity: .3;
+      }
+    }
+
+    &__url{
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+
+    &__copyright{
+      font-size: 10px;
+
+      span{
+        margin-right: 5px;
+      }
+    }
+    
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      z-index: -1;
+      background-image: url(src/image/logo.png);
+      background-position: center;
+      background-size: cover;
+      width: 80px;
+      height: 187px;
+    }
+  }
+
+  @include mq(sp){
+    margin: 0 auto;
+    padding: 110px 4%;
+
+    .logo{
+      display: none;
+    }
+  }
+}
+
+$hoverColor :darkgray;
+
+@mixin pageTitle {
+  font-size: 28px;
+  letter-spacing: .3rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 100px;
+
+  @include mq(sp){
+    font-size: 20px;
+  }
+}
+
+@mixin border {
+  transition: .3s;
+  position: relative;
+  &::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transition: .3s;
+    position: absolute;
+    bottom: -2px;
+  }
+  &::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(20deg);
+    transition: .3s;
+    position: absolute;
+    bottom: 0px;
+    right: 100%;
+  }
+  &:hover{
+    color: $hoverColor;
+    &::before{
+      width: 150%;
+      background-color: $hoverColor;
+    }
+    &::after{
+      width: 10px;
+      background-color: $hoverColor;
+      right: -50%;
+    }
+  }
+}
+
+@mixin archive-link{
+  width: 120px;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #C0C0C0;
+  padding: 5px 0;
+  margin-left: auto;
+  transition: .3s;
+  &:hover{
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+@import"scss/header";
+@import"scss/sidebar";
+@import"scss/drawer";
+@import"scss/works";
+@import"scss/blog";
+@import"scss/contact";
+@import"scss/single";
+@import"scss/single-blog";
+@import"scss/pageAbout";
+@import"scss/archive";
+@import"scss/price";
+@import"scss/footer";
+
+*{
+  box-sizing: border-box;
+  color: #000;
+}
+
+body{
+  background-color: #F5F5F5;
+  font-family:  "futura-pt" ,sans-serif;
+
+  &.active{
+    overflow-y: hidden;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+li{
+  list-style: none;
+}
+
+.touch {
+  transition-timing-function: ease;
+  transition-duration: 550ms;
+  transition-property: transform, opacity;
+}
+
+.touch.to-prev {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.touch.to-next {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.thumbnail-area{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.prevArrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -100px;
+  z-index: 10;
+  opacity: .5;
+  transition: .5s;
+  width: 30px;
+}
+
+.nextArrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  z-index: 10;
+  opacity: .5;
+  transition: .5s;
+  width: 30px;
+}
+
+.prevArrow:hover ,.nextArrow:hover{
+  opacity: 1;
+}
+
+.fade{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  visibility: visible !important;
+}
+
+@include mq(sp){
+  .prevArrow ,.nextArrow{
+    display: none;
+  }
+}
+
+.logo__stagger{
+  display: inline-block;
+}

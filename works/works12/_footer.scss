@@ -1,0 +1,21 @@
+footer{
+    margin-top: 170px;
+    margin-bottom: 10px;
+
+    @media (max-width:750px) {
+        margin-top: 80px;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    p{
+        font-size: 0.5rem;
+    }
+
+    span{
+        font-size: 1rem;
+        vertical-align: middle;
+    }
+}

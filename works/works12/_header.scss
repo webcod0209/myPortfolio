@@ -1,0 +1,45 @@
+header{
+    background-image: url(image/mainvisual.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    margin-bottom: 20px;
+
+    @media(max-width:750px){
+        margin-bottom: 10px;
+    }
+
+    .nav{
+
+        ul{
+            display: flex;
+            justify-content: flex-end;
+
+            li{
+                list-style: none;
+                padding-right: 25px;
+
+                a{
+                    color: white;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    filter: drop-shadow(1px 1px 2px #121212);
+                    &:hover{
+                        color: red;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+
+    .heading{
+        @include heading(7rem,45%);
+
+        @media(max-width:750px){
+            font-size: 7rem;
+            top: 42%;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.works{
+  background-image: url(../../cresta_second/img/works-bgi@2x.jpg);
+  background-size: cover;
+  // height: 916px;
+  padding-top: 11px;
+  padding-bottom: 63px;
+  .section-title{
+    color: #fff;
+    text-align: right;
+    margin-right: 230px;
+    &::after{
+      background-color: #fff;
+    }
+  }
+  .works-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    li{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+
+      p{
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        line-height: 1.9;
+        padding: 25px;
+        background-color: #fff;
+        flex-grow: 1;
+      }
+    }
+
+    @media screen and(max-width:880px){
+      display: block;
+      li{
+        width: 100%;
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .ours{
+    text-align: left;
+    color: rgba(255, 255, 255, .05);
+  }
+}

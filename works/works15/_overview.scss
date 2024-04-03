@@ -1,0 +1,70 @@
+main{
+  .overview{
+    background-image: url(image/bg.gif);
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    @keyframes fall {
+      from{
+        background-position: 0 0;
+      }
+
+      to{
+        background-position: -700px 700px;
+      }
+    }
+
+    animation: fall 10s infinite linear;
+    
+
+    .overview-contents{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+      @media (max-width:880px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box{
+        width: 48%;
+        padding: 60px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-sizing: border-box;
+
+        @media (max-width:880px) {
+          width: 96%;
+          padding: 30px;
+        }
+
+        h2{
+          font-size: 1.8rem;
+          padding-bottom: 20px;
+          text-align: center;
+
+          @media (max-width:880px) {
+            font-size: 1.6rem;
+          }
+        }
+
+        h3{
+          font-size: 1.2rem;
+          padding-bottom: 30px;
+          text-align: center;
+
+          @media (max-width:880px) {
+            font-size: 1.1rem;
+          }
+        }
+
+        p{
+          letter-spacing: .1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}

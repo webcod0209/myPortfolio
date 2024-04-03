@@ -1,0 +1,135 @@
+.main{
+  padding: 160px 0;
+
+  @media (max-width:770px) {
+    padding: 150px 0;
+  }
+
+  .top-wrapper{
+    display: flex;
+
+    @media (max-width:770px) {
+      display: block;
+    }
+
+    .top{
+      width: 33%;
+      padding-right: 17px;
+
+      @media (max-width:770px) {
+        width: 100%;
+        padding-bottom: 30px;
+      }
+
+      img{
+        width: 100%;
+      }
+
+      p{
+        font-weight: bold;
+        padding: 15px 0;
+        line-height: 1.5rem;
+      }
+
+      .btn{
+        @include btn;
+      }
+    }
+  }
+
+  .main-visual{
+    display: flex;
+    padding-top: 80px;
+
+    @media (max-width:770px) {
+      display: block;
+    }
+    
+    .left{
+      width: 70%;
+      
+      @media (max-width:770px) {
+        width: 100%;
+      }
+
+      .left-contents{
+        h1{
+          font-size: 1.5rem;
+          padding-bottom: 25px;
+        }
+
+        ul{
+          display: flex;
+
+          li{
+            font-size: .9rem;
+            padding-right: 20px;
+          }
+        }
+        
+        img{
+          width: 100%;
+          padding: 15px 0;
+        }
+
+        p{
+          padding: 0 40px;
+          line-height: 1.5rem;
+          padding-bottom: 30px          
+        }
+
+        .btn{
+          @include btn;
+          padding-bottom: 90px;
+        }
+      }
+    }
+
+    .right{
+      width: 30%;
+      padding: 0 40px;
+
+      @media (max-width:770px) {
+        width: 100%;
+        padding: 0;
+      }
+
+      .heading{
+        @include heading;
+      }
+
+      .text-box{
+        @include text-box;
+      }
+
+      .name{
+        img{
+          width: 120px;
+          border-radius: 90px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .ranking{
+        .ranking-contents{
+          padding-bottom: 30px;
+
+          img{
+            width: 100%;
+
+            @media (max-width:770px) {
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      .archive{
+        ul{
+          @include list;
+        }
+      }
+    }
+  }
+}

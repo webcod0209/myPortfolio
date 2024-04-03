@@ -1,0 +1,14 @@
+.pickup{
+  margin-bottom: 120px;
+
+  .pickup-contents{
+    display: flex;
+    overflow-x: auto;
+
+    img{
+      width: 25%;
+      display: block;
+      padding: 0 30px;
+    }
+  }
+}

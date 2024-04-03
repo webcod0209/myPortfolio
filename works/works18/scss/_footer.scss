@@ -1,0 +1,48 @@
+footer{
+  border-top: #fff solid 1px;
+  
+  .container{
+    padding: 80px 30px;
+    font-size: 0.3rem;
+
+    @media screen and(max-width:880px){
+      padding-bottom: 50px;   
+    }
+
+    .address{
+      line-height: 1.2rem;
+      padding-bottom: 30px;
+    }
+
+    .footer-bottom{
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and(max-width:880px){
+        flex-direction: column;
+        height: 60px;
+      }
+
+      .sns{
+        display: flex;
+
+        li{
+          padding-right: 15px;
+        }
+      }
+
+      .logo{
+        display: flex;
+
+        li{
+          padding-right: 15px;
+
+          span{
+            font-size: 1rem;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}

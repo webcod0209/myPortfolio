@@ -1,0 +1,33 @@
+.ceo-message{
+  margin-bottom: 120px;
+  
+
+  .section-inner{
+    position: relative;
+    padding-top: 141px;
+    
+    img{
+      width: 38%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  
+    .message-contents{
+      width: 70%;
+      // position: absolute;
+      // bottom: 0;
+      // right: 0;
+      background-color: #F0F0F0;
+      padding: 12% 16%;
+      margin-left: auto;
+  
+      p{
+        font-size: 16px;
+        line-height: 2;
+      }
+    }
+  }
+}

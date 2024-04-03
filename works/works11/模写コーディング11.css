@@ -1,0 +1,319 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body{
+    background-color: #e6e2d7;
+    color: #000;
+    font-family: 'Noto Serif JP', serif;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.container{
+    padding: 60px 80px;
+}
+
+header{
+    background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-pc.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    margin-bottom: 180px;
+}
+
+.header-logo h1{
+    font-size: 45px;
+    letter-spacing: 10px;
+    padding-left: 40px;
+}
+
+.header-menu li{
+    padding-right: 30px;
+}
+
+.header-left{
+    background: rgba(255,255,255,0.2);
+    padding: 8px 28px;
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    top: 400px;
+}
+
+.header-left a{
+    border: #ccc 1px solid;
+    padding: 30px 20px;
+}
+
+.news-wrapper{
+    margin-bottom: 180px;
+}
+
+.wrapper{
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    max-width: 1028px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.heading h1{
+    font-size: 33px;
+    font-weight: lighter;
+    padding-right: 10px;
+    letter-spacing: 4px;
+}
+
+.list dl{
+    padding-right: 100px;
+    padding-top: 80px;
+}
+
+.list dt{
+    border-right: 1px black solid;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+.list dd{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.list dd:last-child{
+    border-left: solid 1px black;
+}
+
+.create-heading{
+    display: flex;
+}
+
+.create-heading p{
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.create-img{
+    width: 65%;
+    position: relative;
+    margin-top: 100px;
+    padding-right: 20px;
+}
+
+.create-img img{
+    width: 100%;
+}
+
+.create-img p{
+    writing-mode: horizontal-tb;
+    color: white;
+    background: rgba(249, 233, 6, 0.6);
+    padding: 50px 70px;
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    line-height: 20px;
+    width: 55%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.science-wrapper{
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+
+.science-heading{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.science-heading p{
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.science-img{
+    width: 65%;
+    position: relative;
+    margin-top: 100px;
+    padding-right: 20px;
+}
+
+.science-img img{
+    width: 100%;
+}
+
+.science{
+    writing-mode: vertical-lr;
+}
+
+.science-img p{
+    writing-mode: horizontal-tb;
+    color: white;
+    background: rgba(149, 42, 38, 0.6);
+    padding: 50px 100px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    line-height: 20px;
+}
+
+.map-wrapper iframe{
+    width: 100%;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    color: white;
+    padding-bottom: 30px;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-left{
+    margin-left: auto;
+    writing-mode: vertical-rl; 
+}
+
+.footer-left h1{
+    font-size: 45px;
+    letter-spacing: 10px;
+    padding-left: 70px;
+}
+
+.footer-left p{
+    padding-left: 10px;
+}
+
+.footer-left ul{
+    padding-right: 70px;
+}
+
+.footer-left li{
+    list-style: none;
+    padding-left: 30px;
+}
+
+.footer-right{
+    writing-mode: vertical-rl; 
+}
+
+.footer-right a{
+    margin-right: auto;
+}
+
+.footer-logo{
+    text-align: center;
+    font-size: 8px;
+}

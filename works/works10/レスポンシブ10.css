@@ -1,0 +1,146 @@
+@media(max-width:880px){
+    .header-left{
+        display: block;
+    }
+
+    .header-left li:first-child{
+        padding-left: 0px;
+    }
+
+    .header-left img{
+        width: 110px;
+    }
+
+    .header-right{
+        display: none;
+    }
+
+    .heading{
+        padding-bottom: 40px;
+    }
+
+    .news-wrapper{
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .daylys{
+        display: block;
+    }
+
+    .dayly{
+        padding-right: 97px;
+        border-right: none;
+        padding-top: 0px ;
+        padding-bottom: 40px;
+        padding-left: 0px;
+    }
+
+    .about-wrapper{
+        display: block;
+    }
+
+    .about-wrapper img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .about-contents{
+        padding-top: 30px;
+        padding-right: 60px;
+        padding-left: 15px;
+        padding-bottom: 80px;
+    }
+
+    .photos{
+        display: block;
+        padding: 0px;
+    }
+    
+    .left{
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .photo img{
+        padding-bottom: 30px;
+
+    }
+
+    .business-wrapper{
+        padding-bottom: 50px;
+    }
+
+    .wrapper{
+        display: block;
+        position: static;
+    }
+
+    .company-wrapper{
+        height: auto;
+    }
+
+    .company-contents{
+        background-color: white;
+        width: 100%;
+        padding: 35px 20px;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    dl{
+        display: block;
+        flex-wrap: wrap;
+        line-height: 20px;
+    }
+
+    dd{
+        padding-left: 14px;
+        padding-bottom: 10px;
+    }
+    
+    .add{
+        margin: 0px;
+    }
+
+    .company-image{
+        width: 100%;
+        position: static;
+        top: 115px;
+        right: 0;
+        padding-top: 20px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .last{
+        display: block;
+        justify-content: space-between;
+    }
+
+    .footer-left{
+        padding-top: 50px;
+    }
+
+    footer img{
+        width: 80px;
+        padding-bottom: 10px;
+    }
+
+    .footer-right{
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    .inc{
+        padding-bottom: 22px;
+    }
+}

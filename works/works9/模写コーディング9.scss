@@ -1,0 +1,38 @@
+$color:#333333;
+$font-family:'Raleway',sans-serif;
+$border-color:#c3c3c3;
+
+@mixin table {
+    text-align: center;
+    font-size: .7rem;
+    font-family: $font-family;
+    width: 100%;
+}
+
+h1 h2 p a li {
+    font-family: $font-family;
+}
+
+a {
+    text-decoration: none;
+    color: $color;
+}
+
+p {
+    color: $color;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+@import"reset";
+@import"header";
+@import"main";
+@import"footer";

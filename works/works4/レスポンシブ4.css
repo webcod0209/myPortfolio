@@ -1,0 +1,29 @@
+@media(max-width:1010px){
+    .detail-contents{
+        display: block;
+    }
+
+    .detail-img img{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .detail-text{
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+
+@media(max-width:600px){
+    .index-contents{
+        width: 87%;
+    }
+
+    .detail-wrapper .container{
+        width: 87%;
+    }
+
+    footer .container{
+        width: 87%;
+    }
+}

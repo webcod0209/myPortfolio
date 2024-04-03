@@ -1,0 +1,30 @@
+.contact{
+  background-image: url(../../cresta_second/img/contact-bgi@2x.jpg);
+  background-size: cover;
+  // height: 666px;
+  padding-top: 11px;
+  .section-title{
+    color: #fff;
+    text-align: right;
+    margin-right: 230px;
+    &::after{
+      background-color: #fff;
+    }
+  }
+
+  .contact-contents{
+    h3{
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  .ours{
+    text-align: left;
+    color: rgba(255, 255, 255, .05);
+    padding-bottom: 70px;
+  }
+}

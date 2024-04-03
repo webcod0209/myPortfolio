@@ -1,0 +1,106 @@
+main{
+  .reason{
+    margin-bottom: 130px;
+
+    .reason-contents{
+      background-color: red;
+      padding: 80px 0;
+
+      .slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: #fff;
+        padding: 5% 0;
+
+        @media (max-width:880px) {
+          width: 98%;  
+        }
+
+        .slide-icon{
+          height: 60px;
+        }
+
+        .slide-text{
+          padding-left: 30px;
+
+          h2{
+            font-size: 1.7rem;
+            color: red;
+            letter-spacing: .1rem;
+            padding-bottom: 10px;
+          }
+
+          @media (max-width:880px) {
+            h2{
+              font-size: 1.6rem;
+            }
+          }
+
+          p{
+            letter-spacing: .1rem;
+          }
+        }
+      }
+
+      .slide-left{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 50px;
+        opacity: 0;
+        transition: .9s;
+      }
+
+      .active-left{
+        @keyframes slide-left {
+          from{
+            transform: translateX(-100%);
+          }
+
+          to{
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        animation: slide-left .5s ease-out forwards .3s;
+      }
+
+      .slide-right{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        opacity: 0;
+        transition: .9s;
+      }
+
+      .active-right{
+        @keyframes slide-right {
+          from{
+            transform: translateX(200%);
+          }
+
+          to{
+            transform: translateX(100%);
+            opacity: 1;
+          }
+        }
+
+        @media (max-width:880px) {
+          @keyframes slide-right {
+            from{
+              transform:translateX(100%);
+            } 
+  
+            to{
+              transform: translateX(3%);
+              opacity: 1;
+            }
+          }
+        }
+
+        animation: slide-right .5s ease-out forwards .3s;
+      }
+    }
+  }
+}

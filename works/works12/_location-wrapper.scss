@@ -1,0 +1,46 @@
+.location-wrapper {
+
+    .container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .top-image {
+        @include top-image(location);
+
+        .heading {
+            @include heading;
+        }
+    }
+
+    .location-contents{
+        padding: 0 15px;
+        max-width: 920px;
+        margin: 0 auto;
+    }
+
+    .menu {
+        @include menufont;
+    }
+
+    iframe{
+        width: 100%;
+        height: 400px;
+        filter: grayscale(100%);
+        padding-bottom: 20px;
+    }
+
+    .adress{
+        text-align: left;
+        line-height: 25px;
+        font-size: 0.8rem;
+
+        .place{
+            padding-bottom: 10px;
+        }
+
+        .number{
+            padding-top: 10px;
+        }
+    }
+}

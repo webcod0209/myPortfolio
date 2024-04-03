@@ -1,0 +1,50 @@
+.form{
+  margin-bottom: 50px;
+  .section-title{
+    font-weight: normal;
+  }
+
+  form{
+    label{
+      display: block;
+      width: 68%;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      @media screen and(max-width:880px){
+        width: 100%;
+      }
+    }
+
+    input{
+      display: block;
+      width: 68%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      @media screen and(max-width:880px){
+        width: 100%;
+      }
+    }
+
+    textarea{
+      display: block;
+      width: 68%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      @media screen and(max-width:880px){
+        width: 100%;
+      }
+    }
+
+    button{
+      display: block;
+      background-color: #000;
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 1;
+      padding: 20px 97px;
+      border-radius: 50px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+}

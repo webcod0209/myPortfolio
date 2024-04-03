@@ -1,0 +1,95 @@
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  transition: .3s;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 20px;
+    box-sizing: border-box;
+  
+    .menubutton{
+      width: 40px;
+      height: 50px;
+      position: relative;
+      // background-color: blue;
+      cursor: pointer;
+
+      div{
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left:  5px;
+        transition: .7s;
+
+        &:nth-child(1){
+          top: 30%;
+        }
+
+        &:nth-child(2){
+          top: 50%;
+        }
+
+        &:nth-child(3){
+          bottom: 30%;
+        }
+      }
+
+      &.active{
+        div{
+          &:nth-child(1){
+            top: 50%;
+            transform: rotate(-45deg);
+          }
+  
+          &:nth-child(2){
+            opacity: 0;
+            visibility: hidden;
+          }
+  
+          &:nth-child(3){
+            bottom: 50%;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+
+  nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .7s;
+    transform: translateY(-150%);
+    background-color: black;
+    width: 100%;
+    z-index: 9;
+    padding-top: 80px;
+
+    ul{
+      li{
+        padding-bottom: 25px;
+        text-align: center;
+
+        a{
+          font-size: 0.8rem;
+          font-weight: lighter;
+        }
+      }
+    }
+
+    &.active{
+      transform: translateY(0);
+    }
+  }
+}

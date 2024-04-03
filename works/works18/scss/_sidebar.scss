@@ -1,0 +1,26 @@
+.side-bar{
+  position: fixed;
+  bottom: 28%;
+  right: -150px;
+  transform: rotate(-90deg);
+  border: #fff 1px solid;
+  transition: .7s;
+  z-index: 2;
+
+  @media screen and (max-width:880px){
+    display: none;
+  }
+
+  a{
+    width: 165px;
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: .1rem;
+
+    &:last-of-type{
+      border-left: 1px solid #fff;
+    }
+  }
+}

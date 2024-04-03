@@ -1,0 +1,121 @@
+.flow{
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width:945px) {
+    padding-top: 70px;
+  }
+
+  p{
+    padding-bottom: 100px;
+
+    @media screen and (max-width:945px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .order{
+    display: flex;
+
+    @media screen and (max-width:945px) {
+      display: block;
+    }
+
+    .order-left{
+      width: 300px;
+
+      @media screen and (max-width:945px) {
+        width: 100%;
+      }
+      
+      ol{
+        position: relative;
+        &::before{
+          content: "";
+          width: 50px;
+          height: 600px;
+          background-color: #ffdd00;
+          position: absolute;
+          top: 0;
+          left: 75px;
+
+          @media screen and (max-width:945px) {
+            left: 47%;
+          }
+        }
+
+        li{
+          background-color: #414141; 
+          padding: 30px 0px;
+          height: 20px; 
+          color: #fff;
+          font-size: .9rem;
+          text-align: center;
+          position: relative;
+          margin-bottom: 60px;
+
+          &::before{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: #414141 transparent transparent transparent;
+            border-width: 30px 100px;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+
+            @media screen and (max-width:945px) {
+              border-width: 30px calc(50vw - 30px);
+            }
+          }
+        }
+      }
+    }
+
+    .order-right{
+      width: 100%;
+      margin-left: 10%;
+
+      @media screen and (max-width:945px) {
+        margin-left: 40px;
+        width: 95%;
+
+      }
+
+      dl{
+        dt{
+          display: flex;
+          position: relative;
+          font-size: 1.3rem;
+          border-bottom: 1.3px solid #414141;
+          padding-bottom: 8px;
+          margin-bottom: 13px;
+
+          span{
+            background-color: #414141;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            display: block;
+            text-align: center;
+            line-height: 35px;
+            color: #fff;
+            position: absolute;
+            left: -45px;
+            bottom: 0;
+            font-size: 1rem;
+          }
+        }
+
+        dd{
+          margin-bottom: 50px;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}

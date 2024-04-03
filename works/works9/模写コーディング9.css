@@ -1,0 +1,292 @@
+h1 h2 p a li {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+p {
+  color: #333333;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: #c3c3c3 1px solid;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+}
+@media (max-width: 896px) {
+  header {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    border-bottom: none;
+    width: 95%;
+  }
+}
+header .title-logo {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 40px 0;
+}
+header li {
+  font-size: 0.7rem;
+}
+header .header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 896px) {
+  header .header-menu {
+    overflow-x: scroll;
+    color: blue;
+  }
+}
+header .header-left ul {
+  display: flex;
+}
+header .header-left ul li {
+  padding-right: 15px;
+}
+header .header-right ul {
+  display: flex;
+}
+header .header-right ul li {
+  padding-left: 15px;
+}
+
+.main {
+  padding-bottom: 100px;
+}
+.main .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 896px) {
+  .main .wrapper {
+    display: block;
+  }
+}
+.main .wrapper .main-visual {
+  width: 50%;
+}
+@media (max-width: 896px) {
+  .main .wrapper .main-visual {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+.main .wrapper .main-visual img {
+  width: 100%;
+}
+.main .wrapper .main-contents {
+  width: 43%;
+}
+@media (max-width: 896px) {
+  .main .wrapper .main-contents {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+.main .wrapper .main-contents .heading {
+  border-top: #c3c3c3 1px solid;
+  border-bottom: #c3c3c3 1px solid;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.main .wrapper .main-contents .main-text {
+  font-size: 0.75rem;
+  line-height: 22px;
+  padding-bottom: 40px;
+}
+.main .wrapper .main-contents .tax {
+  font-size: 0.7rem;
+  padding-bottom: 40px;
+}
+.main .wrapper .main-contents .tax span {
+  vertical-align: text-top;
+}
+.main .wrapper .main-contents .select table {
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+}
+.main .wrapper .main-contents .select table th {
+  font-weight: normal;
+  border-right: solid #c3c3c3 1px;
+  padding: 10px;
+}
+.main .wrapper .main-contents .select table th:last-child {
+  border-right: none;
+}
+.main .wrapper .main-contents .select table td {
+  border-right: solid #c3c3c3 1px;
+  border-top: solid #c3c3c3 1px;
+  padding: 10px;
+}
+.main .wrapper .main-contents .select table td:last-child {
+  border-right: none;
+}
+.main .wrapper .main-contents .select table .small {
+  width: 20%;
+}
+.main .wrapper .main-contents .select table .big {
+  width: 60%;
+}
+.main .wrapper .main-contents .select table select {
+  width: 100%;
+  border: #c3c3c3 1px solid;
+  padding-left: 10px;
+}
+.main .wrapper .main-contents .btn {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.main .wrapper .main-contents .btn a {
+  display: block;
+  background-color: #4b4b4b;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.7rem;
+  width: 100%;
+}
+.main .wrapper .main-contents .size table {
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  border: #c3c3c3 1px solid;
+}
+.main .wrapper .main-contents .size table tr {
+  border-bottom: #c3c3c3 1px solid;
+}
+.main .wrapper .main-contents .size table td {
+  border-left: #c3c3c3 1px solid;
+  padding: 12px 20px;
+}
+.main .wrapper .main-contents .size table th {
+  border-right: #c3c3c3 1px solid;
+  background-color: #ecebeb;
+  font-weight: normal;
+  padding: 12px 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.6rem;
+  padding-bottom: 10px;
+}
+footer span {
+  font-size: 1rem;
+  vertical-align: middle;
+}/*# sourceMappingURL=模写コーディング9.css.map */

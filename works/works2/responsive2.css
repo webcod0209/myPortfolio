@@ -1,0 +1,47 @@
+@media(max-width:580px){
+    header{
+        height: 100px;
+    }
+
+    .header-menu{
+        height: 100px;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 30px; 
+    }
+
+    .header-right li{
+        font-size: 12.8px;
+    }
+
+    .main-visual img{
+        object-fit: none;
+    }
+
+    .works-wrapper img{
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    dl{
+        flex-direction: column;
+    }
+
+    dd{
+        border-bottom: none;
+        padding: 15px 15px 0 15px;
+    }
+
+    dt{
+        width: 100%;
+        padding: 10px 15px 15px 15px;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+
+    input,textarea{
+        width: 100%;
+    }
+}

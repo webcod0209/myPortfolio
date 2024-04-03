@@ -1,0 +1,16 @@
+footer{
+  height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+  }
+
+  span{
+    font-size: 20px;
+    vertical-align: middle;
+  }
+}

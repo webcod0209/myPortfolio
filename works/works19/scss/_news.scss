@@ -1,0 +1,29 @@
+.news{
+  margin-bottom: 157px;
+  .news-contents{
+    display: flex;
+    justify-content: space-between;
+    @media screen and(max-width:880px){
+      display: block;
+    }
+    .news-content{
+      width: 31%;
+      box-shadow: 0 0 2px 2px gray;
+      @media screen and(max-width:880px){
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      img{
+        width: 100%;
+      }
+
+      p{
+        font-size: 13px;
+        padding: 25px 33px;
+        letter-spacing: 0.7px;
+        line-height: 1.9;
+        font-weight: bold;
+      }
+    }
+  }
+}

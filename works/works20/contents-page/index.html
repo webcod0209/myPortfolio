@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact-page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <h3 class="header-left">Cresta Design</h3>
+      <ul class="header-right">
+        <li><a href="../top/index.html#concept">Concept</a></li>
+        <li><a href="../top/index.html#service">Works</a></li>
+        <li><a href="../top/index.html#works">Service</a></li>
+        <li><a href="../top/index.html#contact">Contact</a></li>
+      </ul>
+      <div class="menu-button" id="menubutton">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="../top/index.html#concept">Concept</a></li>
+      <li><a href="../top/index.html#service">Service</a></li>
+      <li><a href="../top/index.html#works">Works</a></li>
+      <li><a href="../top/index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="top-wrapper" id="top-wrapper">
+      <h1>Contact</h1>
+    </div>
+    <div class="contents">
+      <div class="inner">
+        <form action="">
+          <dl>
+            <dt>お問い合せ内容</dt>
+            <dd>
+              <ul>
+                <li>
+                  <input type="checkbox" name="otoiawase" id="siryou" value="siryou" checked>
+                  <label for="siryou">資料請求</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="otoiawase" id="tell" value="tell">
+                  <label for="tell">お電話でのご相談を希望</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="otoiawase" id="mousikomi" value="mousikomi">
+                  <label for="mousikomi">申し込み</label>
+                </li>
+              </ul>
+            </dd>
+            <dt><label for="name">担当者名</label></dt>
+            <dd><input type="text" id="name" name="name"></dd>
+            <dt><label for="tel">電話番号</label></dt>
+            <dd><input type="tel" id="tel" name="tel"></dd>
+            <dt><label for="email">メールアドレス</label></dt>
+            <dd><input type="email" id="email" name="email"></dd>
+            <dt><label for="other">その他</label></dt>
+            <dd><textarea name="" id="other" cols="30" rows="10"></textarea></dd>
+          </dl>
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p><span>©︎</span>cresta.design all rights reserved</p>
+  </footer>
+</body>
+</html>

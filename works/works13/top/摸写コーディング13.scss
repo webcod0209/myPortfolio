@@ -1,0 +1,146 @@
+@mixin header {
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+
+    .header-left{
+        font-size: 1.2rem;
+    }   
+
+    .header-right{
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 25px;
+        right: 8%;
+
+        div{
+            height: 2px;
+            width: 30px;
+            background: black
+        }
+
+        div:nth-of-type(1){
+            transform: translate(0px,10px);
+            transition: 0.3s;
+        }
+
+        div:nth-of-type(2){
+            transform: translate(0px,15px);
+            transition: 0.3s;
+        }
+
+        &.active{
+            z-index: 20;
+
+            div:nth-of-type(1){
+                transform: rotate(45deg) translate(13px,11px);
+                
+                background: white;
+            }
+
+            div:nth-of-type(2){
+                transform: rotate(-45deg) translate(-10px,12px);
+                
+                background: white;
+            }
+        }
+    }
+
+    nav{
+        z-index: 20;
+        position: absolute;
+        top: 30px;
+        left: -40%;
+        transition: .7s;
+
+        ul{
+            li{
+                padding: 10px;
+                font-size: .9rem;
+
+                a{
+                    color: white;
+                }
+            }
+        }
+
+        &.active{
+            left: 40px;
+        }
+    }
+
+    .mask{
+        background-color: #000;
+        opacity: .8;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: none;
+
+        &.active{
+            display: block;
+        }
+    }
+}
+
+@mixin footer {
+    @media (max-width:880px) {
+        padding-bottom: 20px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:880px) {
+            display: block;
+        }
+    }
+
+    .footer-left{
+        font-size: .7rem;
+        padding-bottom: 20px;
+
+        @media (max-width:880px) {
+            padding-bottom: 10px;
+        }
+
+        a{
+            padding-right: 30px;
+        }
+    }
+
+    .footer-right{
+        font-size: .6rem;
+    }
+}
+
+@mixin heading {
+    font-weight: normal;
+    font-size: .9rem;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+@import"reset";
+@import"header";
+@import"main";
+@import"footer";

@@ -1,0 +1,142 @@
+main{
+  .voice{
+    margin-bottom: 50px;
+
+    .voice-contents{
+      
+      .voice-left,.voice-right{
+        display: flex;
+        padding-bottom: 80px;
+        opacity: 0;
+
+        @media (max-width:880px) {
+          flex-direction: column-reverse;
+          align-items: center;
+          padding-bottom: 40px;
+        }
+
+        .voice-icon{
+          
+          img{
+            width: 120px;
+            height: 120px;
+            background-color: #ccc;
+            border-radius: 50%;
+          }
+
+          p{
+            text-align: center;
+            font-size: .7rem;
+            letter-spacing: .1rem;
+            padding-top: 5px;
+          }
+        }
+
+        .voice-text{
+          background-color: #e9f1fb;
+          border-radius: 15px;
+          width: 55%;
+          padding: 20px;
+          margin-bottom: 20px;
+          position: relative;
+
+          @media (max-width:880px) {
+            width: 92%;
+            text-align: center;
+          }
+
+          p{
+            letter-spacing: .2rem;
+            line-height: 1.5rem;
+          }
+        }
+
+        
+      }
+
+      .scale{
+        @keyframes scale {
+          from{
+            transform: scale(0);
+            opacity: 0;
+          }
+
+          to{
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+
+        animation: scale .7s .2s forwards;
+      }
+
+      .voice-left{
+        .voice-icon{
+          padding-right: 25px;
+
+          @media (max-width:880px) {
+            padding-right: 0;
+            padding-top: 10px;
+          }
+        }
+
+        .voice-text{
+          &::before{
+            content: "";
+            position: absolute;
+            top: 60%;
+            left: 0;
+            margin-left: -30px;
+            border: 15px solid transparent;
+            border-right: 15px solid #e9f1fb;
+          }
+
+          @media (max-width:880px) {
+            &::before{
+              top: 100%;
+              border: 15px solid transparent;
+              border-top: 15px solid #e9f1fb;
+              margin-left: calc(50% -  15px);
+            } 
+          }
+        }
+      }
+
+      .voice-right{
+        justify-content: flex-end;
+
+        @media (max-width:880px) {
+          flex-direction: column;
+        }
+
+        .voice-icon{
+          padding-left: 25px;
+
+          @media (max-width:880px) {
+            padding-left: 0;
+            padding-top: 10px;
+          }
+        }
+
+        .voice-text{
+          &::before{
+            content: "";
+            position: absolute;
+            top: 60%;
+            right:  0;
+            margin-right: -30px;
+            border: 15px solid transparent;
+            border-left: 15px solid #e9f1fb;
+
+            @media (max-width:880px) {
+              top: 100%;
+              border: 15px solid transparent;
+              border-top: 15px solid #e9f1fb;
+              margin-right: calc(50% - 15px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

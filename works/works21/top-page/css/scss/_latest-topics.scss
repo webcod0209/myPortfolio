@@ -1,0 +1,56 @@
+.latest-topics{
+  padding: 60px 0;
+
+  @media screen and(max-width:375px){
+    padding: 40px 0;
+  }
+  
+  .latest-contents{
+    
+    dl{
+      margin-left: auto;
+      width: 64%;
+      dt{
+        font-size: 10px;
+        letter-spacing: 0.015rem;
+        color: #CECECE;
+        font-weight: bold;
+      }
+  
+      dd{
+        font-size: 14px;
+        letter-spacing: 0.004rem;
+        font-weight: bold;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 12px 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    .btn{
+      margin-left: auto;
+    }
+
+    @media screen and(max-width:768px){
+      dl{
+        margin-right: auto;
+        margin-left: 0;
+      }
+
+      .btn{
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+
+    @media screen and(max-width:375px){
+      dl{
+        dd{
+          font-size: 12px;
+          letter-spacing: .068px;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}

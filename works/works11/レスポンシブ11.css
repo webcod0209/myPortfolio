@@ -1,0 +1,80 @@
+@media(max-width:740px){
+    header{
+        background-image: url(image/mainvisual-sp.jpeg);
+        margin-bottom: 80px;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .header-left{
+        left: 20px;
+        top: 420px;
+    }
+
+    .heading h1{
+        font-size: 29px;
+        font-weight: lighter;
+        padding-right: 10px;
+        letter-spacing: 4px;
+    }
+
+    .list dl{
+        padding-right: 25px;
+        padding-top: 20px;
+    }
+
+    .list dt{
+        border-right: 1px black solid;
+        padding-right: 15px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .list dd{
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .list dd:nth-child(10){
+        display: none;
+    }
+
+    .list dd:nth-child(8){
+        display: none;
+    }
+
+    .list dt:nth-child(7){
+        display: none;
+    }
+
+    .list dt:nth-child(9){
+        display: none;
+    }
+
+    .list dd:nth-child(6){
+        border-left: solid 1px black;
+    }
+
+    .create-img{
+        width: 90%;
+    }
+
+    .create-img p{
+        writing-mode: horizontal-tb;
+        color: white;
+        background: rgba(249, 233, 6, 0.6);
+        padding: 30px 70px;
+        position: absolute;
+        bottom: 0px;
+        left: -20px;
+        line-height: 20px;
+        width: 60%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}

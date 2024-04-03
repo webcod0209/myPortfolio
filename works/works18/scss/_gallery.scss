@@ -1,0 +1,40 @@
+.garalley{
+  margin-bottom: 500px;
+
+  @media screen and (max-width:880px){
+    margin-bottom: 300px;
+  }
+  
+  .section-title{
+    opacity: 0;
+  }
+
+  .garalley-contents{
+    li{
+      width: 68%;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: flex-start;
+      opacity: 0;
+
+      @media screen and (max-width:880px){
+        width: 92%;
+        margin-bottom: 30px;
+      }
+
+      img{
+        width: 48%;
+        display: block;
+
+        @media screen and (max-width:880px){
+          width: 100%;
+        }
+      }
+
+      &:nth-child(even){
+        justify-content: flex-end;
+      }
+    }
+  }
+}

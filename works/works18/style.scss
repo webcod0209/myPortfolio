@@ -1,0 +1,62 @@
+@import"scss/reset";
+@import"scss/header";
+@import"scss/top";
+@import"scss/infomation";
+@import"scss/gallery";
+@import"scss/access";
+@import"scss/contact";
+@import"scss/sidebar";
+@import"scss/bg";
+@import"scss/footer";
+
+*{
+  color: #fff;
+}
+
+// html{
+//   scroll-behavior: smooth;
+// }
+
+body{
+  background-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  // transition: .3s
+}
+
+main{
+  text-align: center;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.section-title{
+  font-size: 3rem;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 10px;
+  letter-spacing: .2rem;
+  margin-bottom: 50px;
+
+  @media screen and (max-width:880px){
+    font-size: 1.5rem ;
+  }
+}
+
+.fade{
+  animation: fade 2s forwards;
+  @keyframes fade {
+    from{
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

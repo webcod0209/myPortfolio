@@ -1,0 +1,594 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 96px;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header .container .header-left {
+  font-size: 26px;
+  letter-spacing: 1.3px;
+  color: #fff;
+  font-style: italic;
+}
+
+header .container .header-left.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .container .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .header-right li:not(:first-child) {
+  margin-left: 50px;
+}
+
+header .container .header-right li a {
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: .8px;
+}
+
+@media screen and (max-width: 880px) {
+  header .container .header-right {
+    display: none;
+  }
+}
+
+header .container .menu-button {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  header .container .menu-button {
+    display: block;
+  }
+}
+
+header .container .menu-button div {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .container .menu-button div:nth-child(1) {
+  top: 0;
+}
+
+header .container .menu-button div:nth-child(2) {
+  top: 50%;
+}
+
+header .container .menu-button div:nth-child(3) {
+  top: 100%;
+}
+
+header .container .menu-button.active div:nth-child(1) {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .container .menu-button.active div:nth-child(2) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .container .menu-button.active div:nth-child(3) {
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  background-color: #282F35;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+nav ul li:not(:first-child) {
+  margin-top: 30px;
+}
+
+nav ul li a {
+  font-style: 16px;
+  letter-spacing: 0.8px;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+nav.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper {
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 880px) {
+  .swiper {
+    height: 599px;
+  }
+}
+
+.swiper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper .heading {
+  position: absolute;
+  top: 54%;
+  left: 7%;
+  z-index: 99;
+  padding: 0 14px;
+}
+
+@media screen and (max-width: 880px) {
+  .swiper .heading {
+    left: 0;
+    top: 34%;
+  }
+}
+
+.swiper .heading h1 {
+  font-size: 70px;
+  letter-spacing: 3.5px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  .swiper .heading h1 {
+    font-size: 37px;
+    margin-bottom: 59px;
+  }
+}
+
+.swiper .heading p {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  .swiper .heading p {
+    font-size: 30px;
+  }
+}
+
+.concept {
+  margin-bottom: 70px;
+}
+
+.concept h4 {
+  width: 55%;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.05rem;
+  line-height: 1.7;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 880px) {
+  .concept h4 {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+.concept .concept-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.concept .concept-contents p {
+  width: 40%;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 1.9;
+  font-weight: bold;
+  margin-top: 47px;
+}
+
+.concept .concept-contents img {
+  width: 40%;
+}
+
+@media screen and (max-width: 880px) {
+  .concept .concept-contents {
+    display: block;
+  }
+  .concept .concept-contents p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .concept .concept-contents img {
+    width: 100%;
+  }
+}
+
+.works {
+  background-image: url(../../cresta_second/img/works-bgi@2x.jpg);
+  background-size: cover;
+  padding-top: 11px;
+  padding-bottom: 63px;
+}
+
+.works .section-title {
+  color: #fff;
+  text-align: right;
+  margin-right: 230px;
+}
+
+.works .section-title::after {
+  background-color: #fff;
+}
+
+.works .works-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.works .works-contents li {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.works .works-contents li img {
+  width: 100%;
+}
+
+.works .works-contents li p {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 1.9;
+  padding: 25px;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (max-width: 880px) {
+  .works .works-contents {
+    display: block;
+  }
+  .works .works-contents li {
+    width: 100%;
+  }
+  .works .works-contents li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.works .ours {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.service {
+  margin-bottom: 70px;
+}
+
+.service ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.service ul li {
+  width: 33.3333%;
+  position: relative;
+}
+
+.service ul li:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #282F35;
+  opacity: .5;
+  z-index: 2;
+}
+
+.service ul li img {
+  width: 100%;
+}
+
+.service ul li h3 {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+@media screen and (max-width: 880px) {
+  .service ul {
+    display: block;
+  }
+  .service ul li {
+    width: 100%;
+  }
+  .service ul li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.contact {
+  background-image: url(../../cresta_second/img/contact-bgi@2x.jpg);
+  background-size: cover;
+  padding-top: 11px;
+}
+
+.contact .section-title {
+  color: #fff;
+  text-align: right;
+  margin-right: 230px;
+}
+
+.contact .section-title::after {
+  background-color: #fff;
+}
+
+.contact .contact-contents h3 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact .ours {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.05);
+  padding-bottom: 70px;
+}
+
+footer {
+  height: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+}
+
+footer span {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 880px) {
+  .inner {
+    padding: 0 15px;
+  }
+}
+
+.section-title {
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 69px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 2px;
+  background-color: #000;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  bottom: 50%;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 880px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+.ours {
+  font-size: 90px;
+  letter-spacing: 4.5px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.05);
+  text-align: right;
+}
+
+@media screen and (max-width: 880px) {
+  .ours {
+    font-size: 40px;
+  }
+}
+
+.btn {
+  background-color: #F7D43F;
+  width: 235px;
+  padding: 20px 0;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+.mainvisual{
+  .container{
+    background-image: url(image/fv-bgi.jpg);
+    height: 740px;
+    position: relative;
+    @media screen and(max-width:880px){
+      background-image: url(image/fv-bgi2.jpg);
+      background-size: cover;
+    }
+    // img{
+    //   width: 100%;
+    //   object-fit: cover;
+    // }
+    h1{
+      color: #fff;
+      font-size: 50px;
+      letter-spacing: .1px;
+      padding: 35px 42px;
+      border: 1px solid #fff;
+      display: inline-block;
+      position: absolute;
+      top: 43%;
+      left: 32%;
+      @media screen and(max-width:880px){
+        left: 9%;
+      }
+    }
+  }
+}

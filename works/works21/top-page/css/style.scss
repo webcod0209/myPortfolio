@@ -1,0 +1,63 @@
+@import"../../common/css/header";
+@import"scss/top-wrapper";
+@import"scss/about-us";
+@import"scss/works-culture";
+@import"scss/latest-topics";
+@import"scss/contact";
+@import"../../common/css/footer";
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+$breakpoints: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.section-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+
+  // @include mq(){
+  //   padding: 0 30px;
+  // }
+
+  @media screen and(max-width:768px){
+    padding: 0 30px;
+  }
+
+  @media screen and(max-width:375px){
+    padding: 0 15px;
+  }
+}
+
+.section-title{
+  font-size: 32px;
+  letter-spacing: 0.068px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 12px;
+  letter-spacing: .015px;
+  padding: 11px 0;
+  width: 160px;
+}

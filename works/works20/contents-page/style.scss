@@ -1,0 +1,60 @@
+@import"../top/scss/reset";
+@import"../top/scss/header";
+@import"../top/scss/nav";
+@import"scss/top-wrapper";
+@import"scss/contents";
+@import"../top/scss/footer";
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title{
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 69px;
+  margin-top: 100px;
+  position: relative;
+  &::after{
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    bottom: 50%;
+    margin-left: 30px;
+  }
+}
+
+.ours{
+  font-size: 90px;
+  letter-spacing: 4.5px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .05);
+  text-align: right;
+}
+
+.btn{
+  background-color: #F7D43F;
+  width: 235px;
+  padding: 20px 0;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}

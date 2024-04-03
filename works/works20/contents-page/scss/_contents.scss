@@ -1,0 +1,44 @@
+.contents{
+  margin-bottom: 80px;
+  form{
+    max-width: 700px;
+    margin: 0 auto;
+    dl{
+      margin-bottom: 55px;
+      ul{
+        display: flex;
+        @media screen and (max-width:880px){
+          display: block;
+          li{
+            &:not(:last-child){
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      dt{
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        margin-bottom: 7px;
+        font-weight: bold;
+      }
+
+      dd{
+        margin-bottom: 25px;
+        input:not([type="checkbox"]){
+          width: 100%;
+          font-size: 100%;
+          height: 30px;
+        }
+
+        textarea{
+          width: 100%;
+        }
+      }
+    }
+    button{
+      cursor: pointer;
+    }
+  }
+}

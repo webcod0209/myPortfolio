@@ -1,0 +1,17 @@
+footer{
+  background-color: #525252;
+  padding: 20px 0;
+  .footer-inner{
+    p{
+      font-size: 10px;
+      letter-spacing: 0.015rem;
+      color: #fff;
+      text-align: center;
+
+      span{
+        font-size:15px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

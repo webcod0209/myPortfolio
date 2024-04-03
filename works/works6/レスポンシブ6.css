@@ -1,0 +1,10 @@
+@media(max-width:820px){
+    .contents{
+        display: block;
+    }
+
+    .contents img{
+        width: 100%;
+        vertical-align: middle;
+    }
+}

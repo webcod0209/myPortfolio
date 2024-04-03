@@ -1,0 +1,56 @@
+@media(max-width:880px){
+    .magazines{
+        display: block;
+    }    
+    
+    .magazine img{
+        width: 100%;
+    }
+
+    .heading p{
+        width: 100%;
+    }
+
+    .catalog-contents{
+        display: block;
+    }
+
+    .catalog-image{
+        width: 100%;
+        padding-top: 30px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }    
+
+    .catalog{
+        margin-bottom: 60px;
+    }
+
+    .section-title{
+        margin: 0 auto;
+        padding-bottom: 20px;
+        padding-top: 0;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .end-contents{
+        display: block;
+        height: 450px;
+        padding-top: 0;
+    }    
+
+    .end-left{
+        padding: 30px;
+    }
+
+    .end-left img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .end-right{
+        width: 100%;
+        padding-top: 40px;
+    }
+}

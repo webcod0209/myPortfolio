@@ -1,0 +1,44 @@
+@media(max-width:1000px){
+    .header-logo{
+        padding-left: 10px;
+    }
+
+    .index-wrapper{
+        padding: 40px 20px;
+    }
+
+    .index-contents{
+        padding: 35px 35px 0 35px;
+    }
+
+    .img-wrapper{
+        display: block;
+        text-align: center;
+    }
+
+    .img-wrapper img{
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .detail-wrapper{
+        padding: 40px 20px;
+    }
+
+    .detail-contents{
+        display: block;
+    }
+
+    .detail-title{
+        border-right: none;
+        border-bottom: 1px solid black;
+        padding-right: 0;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .detail-text{
+        padding-left: 0;
+        padding-top: 40px;
+    }
+}
