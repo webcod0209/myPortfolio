@@ -1,35 +1,36 @@
-.contact{
-  .container{
+.contact {
+  .container {
     @include container;
-    .contact__form{
+    .contact__form {
       width: 65%;
       margin-left: auto;
 
-      .pageTitle{
+      .pageTitle {
         @include pageTitle;
       }
-  
-      .wpcf7{
-        p{
+
+      .wpcf7 {
+        p {
           font-size: 14px;
           margin-bottom: 40px;
         }
-  
-        input ,textarea{
+
+        input,
+        textarea {
           width: 100%;
           padding: 10px;
           margin-top: 10px;
           color: #000;
         }
-  
-        input[type="submit"]{
+
+        input[type="submit"] {
           display: block;
           width: 200px;
           color: #000;
           margin: 0 auto;
           cursor: pointer;
-          transition: .3s;
-          &:hover{
+          transition: 0.3s;
+          &:hover {
             transform: translateY(-2px);
           }
         }
@@ -37,11 +38,11 @@
     }
   }
 
-  @include mq(sp){
-    .container{
-      .contact__form{
+  @include mq(sp) {
+    .container {
+      .contact__form {
         width: 100%;
-        .pageTitle{
+        .pageTitle {
           margin-bottom: 20px;
         }
       }

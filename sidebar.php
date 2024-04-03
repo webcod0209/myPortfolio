@@ -6,6 +6,7 @@
       <li class="sidebar__item"><a href="/archive/" class="sidebar__link">Works</a></li>
       <li class="sidebar__item"><a href="/price/" class="sidebar__link">Price</a></li>
       <li class="sidebar__item"><a href="/contact/" class="sidebar__link">Contact</a></li>
+      <li class="sidebar__item"><a href="https://github.com/webcod0209/myPortfolio.git" target="_blank" class="sidebar__link">GitHub</a></li>
       <li class="sidebar__item"><a href="https://twitter.com/webcod_twi" target="_blank" class="sidebar__link">X（旧Twitter）</a></li>
     </ul>
   </div>

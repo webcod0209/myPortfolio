@@ -1,34 +1,34 @@
-.single{
-  .container{
-    .single__blog{
+.single {
+  .container {
+    .single__blog {
       width: 65%;
       max-width: 800px;
       margin-left: auto;
 
-      &__item{
+      &__item {
         margin-bottom: 100px;
         opacity: 0;
         transform: translateY(50px);
-        transition: .9s;
+        transition: 0.9s;
         visibility: hidden;
 
-        img{
+        img {
           width: 100%;
           height: auto;
           margin-bottom: 40px;
         }
 
-        &__text{
+        &__text {
           font-size: 12px;
           line-height: 1.8;
 
-          .blog__title{
+          .blog__title {
             font-size: 14px;
             font-weight: bold;
             margin-bottom: 40px;
           }
 
-          .blog__time{
+          .blog__time {
             display: block;
             margin-top: 40px;
             text-align: right;
@@ -37,10 +37,10 @@
       }
     }
   }
-  
-  @include mq(sp){
-    .container{
-      .single__blog{
+
+  @include mq(sp) {
+    .container {
+      .single__blog {
         width: 100%;
       }
     }

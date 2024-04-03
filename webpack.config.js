@@ -1,6 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const MODE = "development";
+const MODE = "production";
 const enabledSourceMap = MODE === "development";
 
 module.exports = {
