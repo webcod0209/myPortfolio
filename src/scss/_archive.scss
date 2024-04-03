@@ -1,25 +1,25 @@
-.archive{
-  .container{
+.archive {
+  .container {
     @include container;
 
-    .works{
+    .works {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
 
-      &__item{
+      &__item {
         margin-bottom: 100px;
         opacity: 0;
         transform: translateY(50px);
-        transition: .9s;
+        transition: 0.9s;
         visibility: hidden;
 
-        &__title{
+        &__title {
           font-size: 10px;
           text-align: right;
           margin-bottom: 5px;
           position: relative;
-          &::after{
+          &::after {
             content: "";
             display: block;
             width: 25px;
@@ -31,44 +31,44 @@
           }
         }
 
-        &__sorce{
+        &__sorce {
           font-size: 10px;
           text-align: right;
-          opacity: .5;
+          opacity: 0.5;
           margin-bottom: 20px;
         }
 
-        img{
+        img {
           width: 100%;
           height: auto;
-          box-shadow: -5px 5px 10px 0px rgba(0,0,0,0.6);
-          transition: .3s;
-          &:hover{
+          box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.6);
+          transition: 0.3s;
+          &:hover {
             transform: scale(1.05);
           }
         }
       }
     }
 
-    .archive-link{
+    .archive-link {
       @include archive-link;
     }
 
-    .pagination{
-      .nav-links{
-        .page-numbers{
+    .pagination {
+      .nav-links {
+        .page-numbers {
           display: flex;
           justify-content: flex-end;
-          li{
+          li {
             font-size: 12px;
             margin-right: 30px;
-            &:last-child{
+            &:last-child {
               margin-right: 0;
             }
-            
-            a{
-              transition: .3s;
-              &:hover{
+
+            a {
+              transition: 0.3s;
+              &:hover {
                 color: $hoverColor;
               }
             }
@@ -77,7 +77,7 @@
       }
     }
 
-    .scroll-button{
+    .scroll-button {
       border: #000 solid 1px;
       background-color: #000;
       padding: 25px;
@@ -85,8 +85,8 @@
       position: fixed;
       bottom: 40px;
       right: 40px;
-      transition: .3s;
-      &::before{
+      transition: 0.3s;
+      &::before {
         content: "";
         display: block;
         width: 0;
@@ -100,45 +100,45 @@
         right: 0;
         margin: auto;
       }
-      &:hover{
+      &:hover {
         background-color: #fff;
-        &::before{
+        &::before {
           border-bottom: 5px solid #000;
         }
       }
     }
   }
-  @include mq(tab){
-    .container{
-      .works__item{
+  @include mq(tab) {
+    .container {
+      .works__item {
         width: 47%;
       }
     }
   }
-  @include mq(sp){
-    .container{
-      .works{
+  @include mq(sp) {
+    .container {
+      .works {
         width: 100%;
-        &__item{
+        &__item {
           width: 47%;
           margin-bottom: 50px;
         }
       }
 
-      .scroll-button{
-        &:hover{
+      .scroll-button {
+        &:hover {
           background-color: #000;
 
-          &::before{
+          &::before {
             border-bottom: 5px solid #fff;
           }
         }
       }
     }
   }
-  @include mq(pc){
-    .container{
-      .works__item{
+  @include mq(pc) {
+    .container {
+      .works__item {
         width: 30%;
       }
     }
