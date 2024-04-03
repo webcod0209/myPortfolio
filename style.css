@@ -3,7 +3,7 @@
   \*****************************************************************************************************************************************************************/
 header {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   position: fixed;
   z-index: 100;
   opacity: 0.9;
@@ -106,7 +106,7 @@ header .header__nav.active {
 header .mask {
   width: 100%;
   height: 100vh;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   position: fixed;
   top: 0;
   left: 0;
@@ -365,7 +365,7 @@ header .mask.active {
   display: block;
   font-size: 12px;
   text-align: center;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #c0c0c0;
   padding: 5px 0;
   margin-left: auto;
   transition: 0.3s;
@@ -546,7 +546,7 @@ main .container .archive-link {
   display: block;
   font-size: 12px;
   text-align: center;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #c0c0c0;
   padding: 5px 0;
   margin-left: auto;
   transition: 0.3s;
@@ -649,7 +649,8 @@ main .container .pagination .nav-links .page-numbers li a:hover {
   font-size: 14px;
   margin-bottom: 40px;
 }
-.contact .container .contact__form .wpcf7 input, .contact .container .contact__form .wpcf7 textarea {
+.contact .container .contact__form .wpcf7 input,
+.contact .container .contact__form .wpcf7 textarea {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -942,7 +943,7 @@ main .container .pagination .nav-links .page-numbers li a:hover {
   display: block;
   font-size: 12px;
   text-align: center;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #c0c0c0;
   padding: 5px 0;
   margin-left: auto;
   transition: 0.3s;
@@ -1090,7 +1091,7 @@ main .container .pagination .nav-links .page-numbers li a:hover {
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   font-family: "futura-pt", sans-serif;
 }
 body.active {
@@ -1149,7 +1150,8 @@ li {
   width: 30px;
 }
 
-.prevArrow:hover, .nextArrow:hover {
+.prevArrow:hover,
+.nextArrow:hover {
   opacity: 1;
 }
 
@@ -1160,7 +1162,8 @@ li {
 }
 
 @media screen and (max-width: 767px) {
-  .prevArrow, .nextArrow {
+  .prevArrow,
+  .nextArrow {
     display: none;
   }
 }
