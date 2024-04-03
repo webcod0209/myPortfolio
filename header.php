@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" href="https://use.typekit.net/oir1lrb.css">
-	<link rel="shortcut icon" href="https://webcod6.com/wp-content/uploads/2024/01/meisi.jpeg">
+  <link rel="shortcut icon" href="https://webcod6.com/wp-content/uploads/2024/01/meisi.jpeg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <title><?php titles(); ?></title>
   <?php wp_head(); ?>
 </head>
+
 <body>
   <header>
     <div class="container header__inner">
@@ -28,6 +30,7 @@
         <li class="nav__item"><a href="/archive/" class="nav__link">Works</a></li>
         <li class="nav__item"><a href="/price/" class="nav__link">Price</a></li>
         <li class="nav__item"><a href="/contact/" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="https://github.com/webcod0209/myPortfolio.git" target="_blank" class="nav__link">GitHub</a></li>
         <li class="nav__item"><a href="https://twitter.com/webcod_twi" target="_blank" class="nav__link">X（旧Twitter）</a></li>
       </ul>
     </nav>

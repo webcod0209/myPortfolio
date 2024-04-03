@@ -1,45 +1,45 @@
-.drawer{
-    width: 100%;
-    background-color: #fff;
-    position: fixed;
-    z-index: 12;
-    transform: translateY(-100%);
-    transition: .7s;
+.drawer {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 12;
+  transform: translateY(-100%);
+  transition: 0.7s;
 
-  .drawer__inner{
+  .drawer__inner {
     padding: 150px 250px 150px 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .drawer__list{
+    .drawer__list {
       display: flex;
       flex-wrap: wrap;
       font-size: 12px;
       line-height: 1.3;
 
-      .drawer__term{
+      .drawer__term {
         width: 20%;
         margin-bottom: 30px;
       }
 
-      .drawer__description{
+      .drawer__description {
         width: 80%;
         margin-bottom: 30px;
       }
     }
 
-    .drawer__img{
+    .drawer__img {
       width: 120px;
       border-radius: 50%;
     }
   }
 
-  &.active{
+  &.active {
     transform: translateY(0%);
   }
 
-  @include mq(sp){
+  @include mq(sp) {
     display: none;
   }
 }
