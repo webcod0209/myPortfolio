@@ -10,7 +10,7 @@
         <dt class="pageAbout__term">Profile</dt>
         <dd class="pageAbout__description">Webコーダー<br>大阪生まれ大阪育ち<br>フリーランスで活動<br>WordPressを中心に制作案件を受注<br>STUDIOなどノーコードでの制作も行なってます</dd>
         <dt class="pageAbout__term">Hours</dt>
-        <dd class="pageAbout__description">月水土日　8:00~20:00<br>火木金　19:00~23:00</dd>
+        <dd class="pageAbout__description">月水土日　8:00~20:00<br>火木金　18:00~23:00</dd>
         <dt class="pageAbout__term">Contact</dt>
         <dd class="pageAbout__description">webcod0209@gmail.com</dd>
         <dt class="pageAbout__term">Address</dt>
